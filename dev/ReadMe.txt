@@ -8,4 +8,4 @@
  - Access Key / Secret Key 에 대한 Credential 변경 필요
  - PEM KEY 변경 필요
  - 자신에게 맞는 Name 및 Tag 필요
- 5. .terraform Folder 업로드 못함 (100MB 초과)
+5. .terraform Folder 업로드 못함 (100MB 초과)
