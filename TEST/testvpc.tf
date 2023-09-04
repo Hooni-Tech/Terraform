@@ -47,7 +47,7 @@ resource "aws_subnet" "main_subnet2" {
 resource "aws_subnet" "main_subnet3" {
   vpc_id                  = aws_vpc.main.id
   cidr_block              = "200.200.0.64/27"
-  availability_zone       = data.aws_availability_zones.available.names[3]
+  availability_zone       = data.aws_availability_zones.available.names[1]
   map_public_ip_on_launch = true
   tags = {
     Name = "${var.tag}-Subnet3"
