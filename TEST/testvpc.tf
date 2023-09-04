@@ -8,7 +8,7 @@ data "aws_availability_zones" "available" {
 
 variable "vpc_cidr" {
   description = "CIDR for the VPC"
-  default     = "200.0.0.0/16"
+  default     = "200.200.0.0/24"
 }
 
 variable "tag" {
@@ -26,7 +26,7 @@ resource "aws_vpc" "main" {
 
 resource "aws_subnet" "main_subnet" {
   vpc_id                  = aws_vpc.main.id
-  cidr_block              = "200.0.0.0/24"
+  cidr_block              = "200.200.0.0/27"
   availability_zone       = data.aws_availability_zones.available.names[0]
   map_public_ip_on_launch = true
   tags = {
